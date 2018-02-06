@@ -27,7 +27,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"  
     });
 
-    gulp.watch(['node_modules/bulma/bulma.sass', 'src/sass/*.sass'], ['sass']);
+    gulp.watch(['src/sass/*.sass'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
